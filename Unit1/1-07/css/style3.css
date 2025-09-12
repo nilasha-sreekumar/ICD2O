@@ -1,0 +1,12 @@
+table,
+th,
+td {
+  border: 1px solid black
+}
+
+#myHeader {
+  background-color: rgb(253, 255, 137);
+  color: rgb(211, 96, 96);
+  padding: 40px;
+  text-align: center;
+}
