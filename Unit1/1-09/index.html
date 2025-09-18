@@ -10,9 +10,14 @@
   <title>Animal Adoption form</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_green-pink.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons2/favicon-apple-touch-icon[1].png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons2/favicon-32x32[1].png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons2/favicon-16x16[1].png">
+  <link rel="manifest" href="./favicon2/favicon-site[1].webmanifest">
+  <link rel="icon" type="image/png" href="./favicons2/favicon-32x32[1].png">
 </head>
 <body style="background-color:rgb(255, 255, 255);">
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
   <!-- Simple Textfield -->
   </button>
   <!-- Always shows a header, even in smaller screens. -->
@@ -37,16 +42,31 @@
         <a class="mdl-navigation__link" href="">About</a>
       </nav>
     </div>
-  <!-- Simple Textfield -->
-  <form action="#">
-    <div class="mdl-textfield mdl-js-textfield">
-      <input class="mdl-textfield__input" type="text" id="sample1">
-      <label class="mdl-textfield__label" for="sample1">Animal name...</label>
-    </div>
-  </form>
-  <!-- Colored FAB button with ripple -->
-  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-    <i class="material-icons">search</i>
-  </button>
+    <!-- Simple Textfield -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="userInput">
+        <label class="mdl-textfield__label" for="sample1">Animal name...</label>
+      </div>
+    </form>
+    <!-- Colored FAB button with ripple -->
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+      <i id="searchButton">search</i>
+    </button>
+    <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
+    <script>
+      const button = document.getElementById('searchButton');
+      const input = document.getElementById('userInput');
+
+      button.addEventListener('click', function () {
+        const q = (input.value || '').trim();
+        const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
+        window.open(url, '_blank');
+      });
+      document.getElementById('clearButton').addEventListener('click', () => {
+          document.getElementById('userInput').value = '';
+          document.getElementById('userInput').focus();
+        });
+    </script>
 </body>
 </html>
