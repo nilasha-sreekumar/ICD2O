@@ -1,0 +1,16 @@
+#myContainer {
+  background-color: rgb(148, 107, 107);
+  border: 2px solid rgb(49, 30, 38);
+  padding: 40px;
+  margin: 30px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#myContainer p {
+  color: #000000;
+  font-size: 1.1em;
+
+  .center-text {
+      text-align: center;
+    }
