@@ -1,3 +1,4 @@
+/*home page heading*/
 #myContainer {
     background-color: rgb(248, 197, 57);
     border: 2px solid rgb(228, 42, 42);
@@ -23,60 +24,7 @@
     clear: both;
     display: table;
 }
-/* card1 */
-.demo-card-wide>.mdl-card__menu {
-    color: #e22727;
-}
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 equal-width columns */
-    gap: 20px;
-    /* Space between grid items */
-}
-
-.card {
-    /* Basic styling for cards */
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
-.demo-card-wide.mdl-card {
-    width: 512px;
-}
-
-.demo-card-wide>.mdl-card__title {
-    color: #000000;
-    height: 176px;
-    background: url('../images/spain_home3.jpg') center / cover;
-}
-
-.demo-card-wide>.mdl-card__menu {
-    color: #fff;
-}
-
-#welcome_card {
-    position: relative;
-    top: -303px;
-    left: 550px;
-    width: 535px;
-    height: 298px;
-    border: 3px solid rgb(255, 255, 255);
-}
-
-#welcome_card2 {
-    position: relative;
-    top: -303px;
-    left: 550px;
-    width: 535px;
-    height: 298px;
-    border: 3px solid rgb(255, 255, 255);
-    width: 512px;
-    color: #000000;
-        height: 176px;
-        background: url('../images/spain_home2.jpg') center / cover;
-}
 
 /*attractions page heading*/
 #myContainer {
@@ -85,14 +33,55 @@
     padding: 40px;
     margin: 30px;
     text-align: center;
-    font-family: Times , sans-serif;
+    font-family: Arial, serif, sans-serif;
 }
 
+/*home page card1*/
+.square-card.mdl-card {
+    width: 350px;
+    height: 256px;
+    display: grid;
+    position: relative;
+    left: 16px;
+    top: -1px;
+}
 
+/*home page card2*/
+.square-card.mdl-card2 {
+    width: 350px;
+    height: 256px;
+    display: grid;
+    position: relative;
+    left: 400px;
+    top: -256px;
+}
+
+/*home page card3*/
+.square-card.mdl-card3 {
+    width: 350px;
+    height: 256px;
+    display: grid;
+    position: relative;
+    left: 785px;
+    top: -512px;
+}
+
+/*home page card4*/
+.square-card.mdl-card4 {
+    width: 350px;
+    height: 256px;
+    display: grid;
+    position: relative;
+    left: 1170px;
+    top: -769px;
+}
+
+/*attractions page sub-heading*/
 #myContainer p {
     color: hsl(0, 0%, 0%);
     font-size: 1.1em;
 
+    /*attractions page heading*/
     .center-text {
         text-align: center;
     }
