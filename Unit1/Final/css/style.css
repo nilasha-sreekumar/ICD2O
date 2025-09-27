@@ -42,7 +42,7 @@
     height: 256px;
     display: grid;
     position: relative;
-    left: 16px;
+    left: 120px;
     top: -1px;
 }
 
@@ -52,7 +52,7 @@
     height: 256px;
     display: grid;
     position: relative;
-    left: 400px;
+    left: 585px;
     top: -256px;
 }
 
@@ -62,19 +62,42 @@
     height: 256px;
     display: grid;
     position: relative;
-    left: 785px;
+    left: 1050px;
     top: -512px;
 }
 
-/*home page card4*/
-.square-card.mdl-card4 {
-    width: 350px;
-    height: 256px;
-    display: grid;
+/*images in home page*/
+#spain_home {
     position: relative;
-    left: 1170px;
-    top: -769px;
+    left: 80px;
+    top: -400px;
 }
+
+#spain_home2 {
+    position: relative;
+    left: 80px;
+    top: -400px;
+}
+
+#spain_home3 {
+    position: relative;
+    left: 80px;
+    top: -400px;
+}
+
+#spain_home4 {
+    position: relative;
+    left: 80px;
+    top: -400px;
+}
+
+#spain_home5 {
+    position: relative;
+    left: 80px;
+    top: -400px;
+}
+
+
 
 /*attractions page sub-heading*/
 #myContainer p {
@@ -85,3 +108,12 @@
     .center-text {
         text-align: center;
     }
+
+    /*Interactive Page buttons*/
+    #search_button {
+        width: 10px;
+        top: 100px;
+        left: 20px;
+    }
+
+    /*image of hotel 1 in bonus page*/
