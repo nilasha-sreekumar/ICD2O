@@ -96,24 +96,3 @@
     left: 80px;
     top: -400px;
 }
-
-
-
-/*attractions page sub-heading*/
-#myContainer p {
-    color: hsl(0, 0%, 0%);
-    font-size: 1.1em;
-
-    /*attractions page heading*/
-    .center-text {
-        text-align: center;
-    }
-
-    /*Interactive Page buttons*/
-    #search_button {
-        width: 10px;
-        top: 100px;
-        left: 20px;
-    }
-
-    /*image of hotel 1 in bonus page*/
