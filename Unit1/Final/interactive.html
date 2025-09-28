@@ -15,7 +15,6 @@
   <link rel="manifest" href="./favicon/favicon-192x192[1].webmanifest">
   <link rel="icon" type="image/png" href="./favicons/favicon-512x512[1].png">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./js/script.js">
 </head>
 <body style="background-color:rgb(255, 255, 255);">
   <!-- Navigation Bar -->
@@ -31,7 +30,7 @@
           <a class="mdl-navigation__link" href="./index.html" style="color:rgb(255, 255, 255)">Home</a>
           <a class="mdl-navigation__link" href="./attractions.html" style="color:rgb(255, 255, 255)">Attractions</a>
           <a class="mdl-navigation__link" href="./interactive.html" style="color:rgb(255, 255, 255)">Explorer</a>
-          <a class="mdl-navigation__link" href="./hotels.html" style="color:rgb(255, 255, 255)">Link</a>
+          <a class="mdl-navigation__link" href="./hotels.html" style="color:rgb(255, 255, 255)">Hotels</a>
         </nav>
       </div>
     </header>
@@ -40,8 +39,8 @@
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="./index.html">Home</a>
         <a class="mdl-navigation__link" href="./attractions.html">Attractions</a>
-        <a class="mdl-navigation__link" href="./interactive.html">Link</a>
-        <a class="mdl-navigation__link" href="./hotels.html">Link</a>
+        <a class="mdl-navigation__link" href="./interactive.html">Explorer</a>
+        <a class="mdl-navigation__link" href="./hotels.html">Hotels</a>
       </nav>
     </div>
     <main class="mdl-layout__content">
@@ -54,12 +53,15 @@
     <!-- Attractions search page -->
     <form action="#">
       <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" id="sample1">
+        <input class="mdl-textfield__input" type="text" id="userInput">
         <label class="mdl-textfield__label" for="sample1">Attraction Name...</label>
       </div>
     </form>
     <!-- Raised button with ripple -->
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="search_button">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="searchButton">
       search
     </button>
     <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
+    <script src="./js/script.js"></script>
+</body>
+</html>
